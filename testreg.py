@@ -12,7 +12,7 @@ import io
 try:
     with open('Amount_model.pkl', 'rb') as file:
         model = pickle.load(file)
-    st.success("Model loaded successfully")
+
 except FileNotFoundError:
     st.error("Error: Amount_model.pkl not found in the current directory")
     st.stop()
